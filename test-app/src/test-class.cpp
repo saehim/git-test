@@ -5,10 +5,12 @@
  *      Author: saehim
  */
 
+#include <stdio.h>
 
-class PrintX
+#include "test-class.h"
+
+void
+PrintX::PrintAny()
 {
-public:
-	void PrintAny();
-};
-
+	printf("Print()\n");
+}
