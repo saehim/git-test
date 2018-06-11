@@ -10,7 +10,11 @@
 #include "test-class.h"
 
 void
-PrintX::PrintAny()
+PrintX::PrintAny(BYTE *byData, int iSize)
 {
-	printf("Print()\n");
+	for (int i = 0; i < iSize; i++)
+	{
+		printf("%02x ", byData[i]);
+	}
+	printf("\n");
 }

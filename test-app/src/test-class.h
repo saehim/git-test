@@ -8,11 +8,12 @@
 #ifndef SRC_TEST_CLASS_H_
 #define SRC_TEST_CLASS_H_
 
+typedef unsigned char BYTE;
 
 class PrintX
 {
 public:
-	void PrintAny();
+	void PrintAny(BYTE *byData, int iSize);
 };
 
 
